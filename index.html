@@ -4,28 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Willing Investments</title>
+
 <style>
-*{box-sizing:border-box}
-html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
-body{font-family:Arial,Helvetica,sans-serif}
-.video-bg{position:fixed;inset:0;width:100%;height:100%;object-fit:cover}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,.22)}
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#000;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* Blurred background */
+.video-bg-blur{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:blur(25px);
+  transform:scale(1.08);
+  opacity:.45;
+}
+
+/* Main video - always fully visible */
+.video-bg{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.22);
+}
+
 .brand{
-  position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);
-  color:#f2f2f2;font-size:clamp(22px,3vw,46px);font-weight:400;
-  letter-spacing:.24em;white-space:nowrap;text-align:center;
+  position:fixed;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  color:#f2f2f2;
+  font-size:clamp(22px,3vw,46px);
+  font-weight:400;
+  letter-spacing:.24em;
+  white-space:nowrap;
+  text-align:center;
   text-shadow:0 2px 18px rgba(0,0,0,.5);
 }
+
 @media(max-width:600px){
-  .brand{font-size:22px;letter-spacing:.16em}
+  .brand{
+    font-size:22px;
+    letter-spacing:.16em;
+  }
 }
 </style>
 </head>
+
 <body>
+
+<!-- Background -->
+<video class="video-bg-blur" autoplay muted loop playsinline preload="auto">
+  <source src="background.mp4" type="video/mp4">
+</video>
+
+<!-- Main video -->
 <video class="video-bg" autoplay muted loop playsinline preload="auto">
   <source src="background.mp4" type="video/mp4">
 </video>
+
 <div class="overlay"></div>
-</div>
+
 </body>
 </html>
