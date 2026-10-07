@@ -3,77 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<title></title>
+<meta name="theme-color" content="#000000">
+<title>Home</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#000;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #000;
+.video-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  height:100dvh;
+  object-fit:cover;
+  object-position:center;
+  background:#000;
 }
 
-body {
-  width: 100%;
-  min-height: 100vh;
-}
-
-/* Full-screen video */
-.video-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  width: 100vw;
-  height: 100dvh;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-}
-
-/* iPhone / iPad / Android */
-@media (max-width: 1024px) {
-  .video-main {
-    width: 100vw;
-    height: 100dvh;
-    object-fit: cover;
-    object-position: center center;
-  }
-}
-
-/* Laptop / Desktop */
-@media (min-width: 1025px) {
-  .video-main {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center center;
-  }
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.22);
+  pointer-events:none;
 }
 </style>
 </head>
 
 <body>
 
-<video
-  class="video-main"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
->
+<video id="bg" class="video-bg" autoplay muted loop playsinline webkit-playsinline preload="auto">
   <source src="background.mp4" type="video/mp4">
 </video>
+
+<div class="overlay"></div>
+
+<script>
+var v = document.getElementById('bg');
+v.muted = true;
+function tryPlay(){
+  var p = v.play();
+  if (p && p.catch) p.catch(function(){});
+}
+tryPlay();
+document.addEventListener('touchstart', tryPlay, { once:true, passive:true });
+document.addEventListener('click', tryPlay, { once:true });
+document.addEventListener('visibilitychange', function(){
+  if (!document.hidden) tryPlay();
+});
+</script>
 
 </body>
 </html>
