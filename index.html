@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<title>Willing Investments</title>
+<title></title>
 
 <style>
 * {
@@ -22,10 +22,11 @@ body {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
-/* Full-screen background layer */
+/* Background layer */
 .video-background {
   position: fixed;
   inset: 0;
@@ -48,49 +49,10 @@ body {
   object-position: center center;
 }
 
-/* Dark overlay */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.22);
-  pointer-events: none;
-}
-
-/* Brand */
-.brand {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  color: #f2f2f2;
-  font-size: clamp(22px, 3vw, 46px);
-  font-weight: 400;
-  letter-spacing: 0.24em;
-  line-height: 1;
-  white-space: nowrap;
-  text-align: center;
-
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
-
-  pointer-events: none;
-  z-index: 10;
-}
-
-/* Phones */
-@media (max-width: 600px) {
-  .brand {
-    font-size: 22px;
-    letter-spacing: 0.16em;
-  }
-
-  .video-background {
-    filter: blur(20px);
-    transform: scale(1.06);
-  }
-
+/* Desktop and laptop */
+@media (min-width: 1025px) {
   .video-main {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
@@ -101,10 +63,15 @@ body {
   }
 }
 
-/* Desktop / Laptop */
-@media (min-width: 1025px) {
+/* Mobile */
+@media (max-width: 600px) {
   .video-main {
-    object-fit: cover;
+    object-fit: contain;
+  }
+
+  .video-background {
+    filter: blur(20px);
+    transform: scale(1.06);
   }
 }
 </style>
@@ -134,12 +101,6 @@ body {
 >
   <source src="background.mp4" type="video/mp4">
 </video>
-
-<div class="overlay"></div>
-
-<div class="brand">
-  Willing Investments
-</div>
 
 </body>
 </html>
