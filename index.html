@@ -3,63 +3,262 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
-<title>Home</title>
+<title>Willing Investments For Projects Management | Real Estate Investment &amp; Project Management</title>
+<meta name="description" content="Willing Investments For Projects Management is a real estate investment firm in New Cairo, Egypt, offering project management, asset management, property management, and marketing services.">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://willinginvestments.com/">
 
-<style>
-*{ box-sizing:border-box; }
+<meta property="og:type" content="website">
+<meta property="og:title" content="Willing Investments For Projects Management">
+<meta property="og:description" content="Real estate investment, project management, asset management, property management, and marketing services in New Cairo, Egypt.">
+<meta property="og:url" content="https://willinginvestments.com/">
+<meta property="og:site_name" content="Willing Investments For Projects Management">
 
-html,body{
-  margin:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  background:#000;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Willing Investments For Projects Management",
+  "legalName": "Willing Investments For Projects Management",
+  "url": "https://willinginvestments.com/",
+  "email": "info@willinginvestments.com",
+  "telephone": "+201119668966",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office OF-F-31, Mindhaus Campus, Building B01 - M05, B01 - G05, Kamelizer Spaces, KM 9 South of Cairo - El Ain El Sokhna Road",
+    "addressLocality": "New Cairo",
+    "addressRegion": "Cairo Governorate",
+    "postalCode": "11835",
+    "addressCountry": "EG"
+  }
 }
-
-.video-bg{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100vh;
-  height:100dvh;
-  object-fit:cover;
-  object-position:center;
-  background:#000;
-}
-
-.overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.22);
-  pointer-events:none;
-}
-</style>
+</script>
 </head>
-
 <body>
 
-<video id="bg" class="video-bg" autoplay muted loop playsinline webkit-playsinline preload="auto">
-  <source src="background.mp4" type="video/mp4">
-</video>
+<header class="site-header" id="header">
+  <div class="container nav">
+    <a href="#home" class="brand" aria-label="Willing Investments For Projects Management">
+      <img src="logo.png" alt="Willing Investments For Projects Management logo" width="600" height="119">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-<div class="overlay"></div>
+<main>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video id="bg" autoplay muted loop playsinline webkit-playsinline preload="auto" aria-hidden="true">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Real Estate Investment &amp; Project Management</span>
+        <h1>Willing Investments <span>For Projects Management</span></h1>
+        <p>We invest in, manage, and market real estate projects, from the first opportunity through delivery, sales, and long-term property management.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">Our Services</a>
+          <a href="#contact" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script>
-var v = document.getElementById('bg');
-v.muted = true;
-function tryPlay(){
-  var p = v.play();
-  if (p && p.catch) p.catch(function(){});
-}
-tryPlay();
-document.addEventListener('touchstart', tryPlay, { once:true, passive:true });
-document.addEventListener('click', tryPlay, { once:true });
-document.addEventListener('visibilitychange', function(){
-  if (!document.hidden) tryPlay();
-});
-</script>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:28px">
+          <span class="eyebrow">About Us</span>
+          <h2>A real estate partner from investment to delivery</h2>
+        </div>
+        <p><strong>Willing Investments For Projects Management</strong> is a real estate investment firm based in New Cairo, Egypt. We help investors, developers, and property owners turn opportunities into successful, well-managed projects.</p>
+        <p>Our services cover the full life cycle of a property: real estate investment, project management, marketing and sales, and ongoing property and asset management. We put clear planning, transparent reporting, and accountability at the center of every engagement.</p>
+        <p>Whether you are evaluating a new opportunity or need an experienced team to deliver one, we bring structure, discipline, and care to every stage.</p>
+        <div class="stats">
+          <div class="stat"><strong>Full cycle</strong><span>Investment to management</span></div>
+          <div class="stat"><strong>Transparent</strong><span>Clear reporting &amp; budgets</span></div>
+          <div class="stat"><strong>Committed</strong><span>On time, on budget</span></div>
+        </div>
+      </div>
 
+      <aside class="legal-card reveal" aria-label="Company information">
+        <h3>Company Information</h3>
+        <dl>
+          <div><dt>Legal Business Name</dt><dd>Willing Investments For Projects Management</dd></div>
+          <div><dt>Registered Address</dt><dd>Office OF-F-31, Mindhaus Campus, Building B01 - M05, B01 - G05, Kamelizer Spaces, KM 9 South of Cairo - El Ain El Sokhna Road, New Cairo, Cairo Governorate, 11835, Egypt</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+201119668966">+20 111 966 8 966</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@willinginvestments.com">info@willinginvestments.com</a></dd></div>
+          <div><dt>Industry</dt><dd>Real Estate Investment &amp; Project Management</dd></div>
+          <div><dt>Website</dt><dd>willinginvestments.com</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2>Our Services</h2>
+        <p>Integrated services that cover every stage of a real estate project.</p>
+      </div>
+      <div class="services">
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div>
+          <h3>Real Estate Investment</h3>
+          <p>Identifying, evaluating, and structuring real estate opportunities with market research and feasibility analysis.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 11h6M9 15h6M9 7h6"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg></div>
+          <h3>Project Management</h3>
+          <p>Planning, scheduling, cost control, and coordination of contractors and stakeholders from design to handover.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-9-9v9h9Z"/><path d="M14.5 2.5a8 8 0 0 1 7 7h-7v-7Z"/></svg></div>
+          <h3>Asset Management</h3>
+          <p>Strategic oversight of real estate portfolios to maximize income, optimize performance, and grow long-term asset value.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
+          <h3>Property Management</h3>
+          <p>Day-to-day operation, maintenance, leasing, and tenant relations that protect and grow the value of your property.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Real Estate Marketing</h3>
+          <p>Brand positioning, digital campaigns, and sales strategies that connect projects with the right buyers and tenants.</p>
+        </article>
+        <article class="service reveal">
+          <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.7 2.5 2 2.5.8 2.5 2-1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6v2M12 16v2"/></svg></div>
+          <h3>Marketing Services</h3>
+          <p>Content, social media, and performance marketing for businesses that want to grow their reach and sales.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Approach</span>
+        <h2>How we work</h2>
+        <p>A clear, proven process that keeps every project accountable.</p>
+      </div>
+      <div class="process">
+        <div class="step reveal"><h3>Assess</h3><p>We study the opportunity, the market, and your goals to define the project's scope and viability.</p></div>
+        <div class="step reveal"><h3>Plan</h3><p>We build a detailed plan covering budget, schedule, risk, and the right team for delivery.</p></div>
+        <div class="step reveal"><h3>Execute</h3><p>We manage contractors, suppliers, and stakeholders, controlling cost and quality every step of the way.</p></div>
+        <div class="step reveal"><h3>Manage &amp; Grow</h3><p>We market, sell, and manage the property to deliver lasting returns for our partners.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="section-head" style="margin-bottom:34px">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Contact Us</h2>
+          <p>Tell us about your project. Our team will get back to you within one business day.</p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span>
+            <div><small>Company</small>Willing Investments For Projects Management</div>
+          </li>
+          <li>
+            <span class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <div><small>Address</small>Office OF-F-31, Mindhaus Campus, Building B01 - M05, B01 - G05, Kamelizer Spaces, KM 9 South of Cairo - El Ain El Sokhna Road, New Cairo, Cairo Governorate, 11835, Egypt</div>
+          </li>
+          <li>
+            <span class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+            <div><small>Phone</small><a href="tel:+201119668966">+20 111 966 8 966</a></div>
+          </li>
+          <li>
+            <span class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+            <div><small>Email</small><a href="mailto:info@willinginvestments.com">info@willinginvestments.com</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="reveal" id="contactForm">
+        <div class="row">
+          <label>Full name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+          <label>Service
+            <select name="service">
+              <option>Real Estate Investment</option>
+              <option>Project Management</option>
+              <option>Asset Management</option>
+              <option>Property Management</option>
+              <option>Real Estate Marketing</option>
+              <option>Marketing Services</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-primary" type="submit" style="justify-self:start">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Willing Investments For Projects Management</h4>
+        <p>Real estate investment, project management, asset management, property management, and marketing.</p>
+        <p>Office OF-F-31, Mindhaus Campus, Building B01 - M05, B01 - G05, Kamelizer Spaces, KM 9 South of Cairo - El Ain El Sokhna Road, New Cairo, Cairo Governorate, 11835, Egypt</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="mailto:info@willinginvestments.com">info@willinginvestments.com</a></li>
+          <li><a href="tel:+201119668966">+20 111 966 8 966</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© <span class="year">2026</span> Willing Investments For Projects Management. All rights reserved.</span>
+      <span>willinginvestments.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
